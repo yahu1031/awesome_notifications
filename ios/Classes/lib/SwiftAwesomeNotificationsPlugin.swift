@@ -778,8 +778,19 @@ public class SwiftAwesomeNotificationsPlugin:
 
     private func channelMethodIsNotificationActiveOnStatusBar(call: FlutterMethodCall, result: @escaping FlutterResult
     ) throws {
+        let notificationId: Int? = call.arguments as? Int
+        if notificationId == nil || notificationId! < 0 {
+            throw ExceptionFactory
+                .shared
+                .createNewAwesomeException(
+                    className: SwiftAwesomeNotificationsPlugin.TAG,
+                    code: ExceptionCode.CODE_INVALID_ARGUMENTS,
+                    message: "Invalid id value",
+                    detailedCode: ExceptionCode.DETAILED_INVALID_ARGUMENTS + ".dismiss.id")
+        }
         awesomeNotifications?
             .isNotificationActiveOnStatusBar(
+                id: notificationId!,
                 whenCompleted: { (active) in
                     result(active)
                 })
