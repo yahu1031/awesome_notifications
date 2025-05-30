@@ -95,6 +95,7 @@ public enum Definitions {
     public static let  CHANNEL_METHOD_SHOW_ALARM_PAGE = "showAlarmPage"
     public static let  CHANNEL_METHOD_SHOW_GLOBAL_DND_PAGE = "showGlobalDndPage"
     public static let  CHANNEL_METHOD_IS_NOTIFICATION_ALLOWED = "isNotificationAllowed"
+    public static let  CHANNEL_METHOD_IS_NOTIFICATION_ACTIVE = "isNotificationActive";
     public static let  CHANNEL_METHOD_REQUEST_NOTIFICATIONS = "requestNotifications"
     public static let  CHANNEL_METHOD_CHECK_PERMISSIONS = "checkPermissions"
     public static let  CHANNEL_METHOD_SHOULD_SHOW_RATIONALE = "shouldShowRationale"
