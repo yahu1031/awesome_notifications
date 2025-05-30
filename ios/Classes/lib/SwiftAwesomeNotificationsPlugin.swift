@@ -786,7 +786,7 @@ public class SwiftAwesomeNotificationsPlugin:
                     className: SwiftAwesomeNotificationsPlugin.TAG,
                     code: ExceptionCode.CODE_INVALID_ARGUMENTS,
                     message: "Invalid id value",
-                    detailedCode: ExceptionCode.DETAILED_INVALID_ARGUMENTS + ".dismiss.id")
+                    detailedCode: ExceptionCode.DETAILED_INVALID_ARGUMENTS + ".notification.id")
         }
         awesomeNotifications?
             .isNotificationActiveOnStatusBar(
