@@ -791,7 +791,7 @@ public class SwiftAwesomeNotificationsPlugin:
         awesomeNotifications?
             .isNotificationActiveOnStatusBar(
                 id: notificationId!,
-                whenCompleted: { (active) in
+                whenFinished: { (active) in
                     result(active)
                 })
     }
