@@ -1,1 +1,5 @@
 rootProject.name = 'awesome_notifications'
+
+
+include ':awn_core'
+project(':awn_core').projectDir = new File('/Volumes/MiniX/mr.minnu/Development/AndroidAwnCore/core')
